@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"> <!-- Define o charset da página como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define as configurações de visualização para dispositivos móveis -->
+    <title>Login</title> <!-- Título da página -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link para o arquivo CSS para estilizar a página -->
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="../index.php" class="active">Home</a></li> <!-- Link para a página inicial -->
+              <li><a href="cadastro.html">Cadastro</a></li> <!-- Link para a página de cadastro -->
+              <li><a href="login.html">Login</a></li> <!-- Link para a página de login -->
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="login-section">
+        <h1>Login</h1> <!-- Título principal da seção -->
+        <form id="login-form" action="../php/login.php" method="post"> <!-- Formulário de login que envia dados para o script PHP login.php -->
+            <div class="form-group">
+                <label for="email">E-mail:</label> <!-- Rótulo para o campo de email -->
+                <input type="email" id="email" name="email" required> <!-- Campo de input para o e-mail -->
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label> <!-- Rótulo para o campo de senha -->
+                <input type="password" id="senha" name="senha" required> <!-- Campo de input para a senha -->
+            </div>
+            <button type="submit" id="logar">Logar</button> <!-- Botão de envio do formulário -->
+        </form>
+        <p class="signup-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p> <!-- Link para a página de cadastro caso o usuário não tenha uma conta -->
+      </section>
+    </main>
+    <script src="../js/script.js"></script> <!-- Link para o arquivo JavaScript -->
+  </body>
+</html>

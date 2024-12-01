@@ -1,0 +1,219 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão da página */
+    background-color: #f7f9fb; /* Cor de fundo suave */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    color: #333; /* Cor padrão do texto */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0066cc; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o preenchimento */
+}
+
+header nav ul li {
+    display: inline-block; /* Exibe os itens de navegação em linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+header nav a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+header nav a:hover, header nav a.active {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse ou se o link for ativo */
+}
+
+/* Conteúdo principal */
+main {
+    display: flex; /* Exibe o conteúdo como flex */
+    flex-direction: column; /* Organiza os itens na coluna */
+    align-items: center; /* Centraliza os itens */
+    padding: 40px 20px; /* Preenchimento */
+}
+
+/* Título principal */
+main h1 {
+    font-size: 28px; /* Tamanho da fonte */
+    color: #0066cc; /* Cor do título */
+    margin-bottom: 30px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Formulários */
+form {
+    background-color: #fff; /* Cor de fundo do formulário */
+    padding: 30px; /* Preenchimento */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Largura total */
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espaço entre os grupos de campo */
+    width: 100%; /* Largura total */
+}
+
+label {
+    display: block; /* Exibe os rótulos como blocos */
+    margin-bottom: 8px; /* Espaço abaixo do rótulo */
+    font-weight: bold; /* Negrito no rótulo */
+    color: #333; /* Cor do rótulo */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], input[type="number"] {
+    width: 100%; /* Largura total */
+    padding: 14px; /* Preenchimento */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui a borda no cálculo da largura */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+button[type="submit"], button[type="button"] {
+    width: 100%; /* Largura total */
+    padding: 14px; /* Preenchimento */
+    background-color: #0066cc; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto do botão */
+    cursor: pointer; /* Aponta o cursor como botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor */
+    box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2); /* Sombra suave no botão */
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #004da8; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Links de navegação */
+.signup-link, .login-link {
+    margin-top: 20px; /* Espaço superior */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+.signup-link a, .login-link a {
+    color: #0066cc; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Container de resultado do IMC */
+#imc-container {
+    background-color: #fff; /* Cor de fundo */
+    padding: 20px; /* Preenchimento */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Largura total */
+    max-width: 500px; /* Largura máxima */
+    margin: 30px auto 0; /* Centraliza e adiciona espaçamento superior */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título do resultado do IMC */
+#imc-container h2 {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #0066cc; /* Cor do título */
+    margin-bottom: 15px; /* Espaço abaixo */
+}
+
+/* Mensagem do resultado do IMC */
+#imc-container p {
+    font-size: 18px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove a margem extra */
+}
+
+/* Tabela de IMC */
+#imc-tabela {
+    margin-top: 30px; /* Espaço superior */
+    border-collapse: collapse; /* Remove espaços entre as células */
+    width: 100%; /* Largura total */
+    max-width: 100%; /* Largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #fff; /* Cor de fundo */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    table-layout: fixed; /* Tabela com layout fixo */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda suave */
+    padding: 12px; /* Preenchimento das células */
+    text-align: center; /* Alinha o texto no centro */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+th {
+    background-color: #0066cc; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    font-size: 18px; /* Tamanho da fonte do cabeçalho */
+    font-weight: bold; /* Negrito no cabeçalho */
+}
+
+td {
+    background-color: #f9f9f9; /* Cor de fundo das células */
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Cor alternada para linhas pares */
+}
+
+tr:hover td {
+    background-color: #e0e0e0; /* Destaque ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #imc-tabela {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+
+    th, td {
+        padding: 10px; /* Ajusta o preenchimento das células */
+    }
+}
+
+.welcome-section {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 50px; /* Espaço superior */
+    padding: 20px; /* Preenchimento */
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.welcome-section h1 {
+    font-size: 28px; /* Tamanho do título */
+    color: #0066cc; /* Cor do título */
+}
+
+.welcome-section p {
+    font-size: 18px; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+}
